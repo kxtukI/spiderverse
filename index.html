@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/scripts/card-animation.js"></script>
+    <title>SpiderVerso</title>
+</head>
+<body>
+    <nav class="hg-menu">
+        <ul>
+            <li class="hg-menu__item">
+                <a href="#">Página Inicial</a>
+            </li>
+            <li class="hg-menu__item">
+            <a href="#">Tobey Maguire</a>
+        </li>
+        <li class="hg-menu__item hg-menu__icon">
+            <img src="assets/images/icons/spider.svg" alt="">
+           </li>
+            <li class="hg-menu__item">
+            <a href="#">Tom Holland</a>
+        </li>
+            <li class="hg-menu__item">
+            <a href="#">Andrew Garfield</a>
+        </ul>
+    </nav>
+    <div class="hg-container">
+        <div class="hg-cards-carousel" style="transform: translateZ(-40vw) rotateY(0deg);">
+            <a href="pages/tobey-maguire/spider-man-1.html" id="spider-man-01" class="hg-card">
+                <img class="hg-card__background" src="assets/images/pic-sm-bg-01.jpg" alt="">
+                <img class="hg-card__image" src="assets/images/spider-man-01.png" alt="">
+                <h2 class="hg-card__title">Tobey Maguire</h2>
+            </a>
+            <a href="pages/tom-holland/spider-man-1.html" id="spider-man-02" class="hg-card">
+                <img class="hg-card__background" src="assets/images/pic-sm-bg-02.jpg" alt="">
+                <img class="hg-card__image" src="assets/images/spider-man-02.png" alt="">
+                <h2 class="hg-card__title">Tom Holland</h2>
+            </a>
+            <a href="pages/andrew-garfield/amazing-spider-man-1.html" id="spider-man-03" class="hg-card">
+                <img class="hg-card__background" src="assets/images/pic-sm-bg-03.jpg" alt="">
+                <img class="hg-card__image" src="assets/images/spider-man-03.png" alt="">
+                <h2 class="hg-card__title">Andrew Garfield</h2>
+            </a>
+        </div>
+    </div>
+    <div class="hg-controller">
+        <div id="1" onclick="selectCarouselItem(this)" class="hg-controller__button hg-controller__button--active">
+            01
+    </div>
+        <div id="2" onclick="selectCarouselItem(this)" class="hg-controller__button">
+            02
+    </div>
+        <div id="3" onclick="selectCarouselItem(this)" class="hg-controller__button">
+            03
+    </div>
+    <div class="hg-controller__line"></div>
+    </div>
+</body>
+</html>

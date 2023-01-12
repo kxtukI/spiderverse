@@ -1,0 +1,87 @@
+@import url("reset.css");
+@import url("global.css");
+@import url("components/__navigator.css");
+@import url("components/__pills.css");
+@import url("components/__link-button.css");
+@import url("components/__gallery.css");
+
+.hg-wrapper{
+    display: flex;
+    height: 100vh;
+    flex-flow: row nowrap;
+}
+
+.hg-wrapper video{
+    position: fixed;
+    width: 100%;
+}
+
+.hg-wrapper .hg-left-column{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    padding-right: 50px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.hg-wrapper .hg-main-content{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    position: relative;
+    padding-left: 130px;
+}
+
+.hg-wrapper .hg-main-content__top{
+    height: 80vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}  
+
+.hg-wrapper .hg-main-content__bottom{
+    height: 20vh;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}  
+
+.hg-wrapper .hg-main-content__top .hg-logo img{
+    margin: 50px 0 30px 0;
+}  
+
+.hg-wrapper .hg-main-content__top .hg-description{
+    background-color: rgba(0,0,0,.7);
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hg-wrapper .hg-main-content__top .hg-description .hg-description__text p{
+    color: white;
+    line-height: 170%;
+}
+
+.hg-wrapper .hg-main-content__top .hg-description .pills{
+    margin-bottom: 20px;
+}
+
+.hg-wrapper .hg-main-content .hg-links{
+    padding: 20px;
+    padding-left: 0;
+}
+
+.hg-wrapper .hg-main-content .hg-links ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.hg-spider-man-01-01{
+    background-image: url("../images/spiderman-andrew/movie-01/background.png");
+    background-size: cover;
+}
