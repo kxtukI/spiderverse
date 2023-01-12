@@ -85,3 +85,133 @@
     background-image: url("../images/spiderman-andrew/movie-01/background.png");
     background-size: cover;
 }
+
+.gallery{
+    padding: 20px;
+    padding-left: 0;
+}
+
+.gallery ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.gallery ul li{
+    margin-left: 25px;
+}
+
+.gallery ul li:first-child{
+    margin-left: 0;
+}
+
+.gallery ul li a img{
+    border: solid 6px white;
+    border-radius: 15px;
+}
+
+a.link-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+a.link-button .icon{
+    width: 32px;
+    height: 32px;
+    padding: 3px;
+    background-color: var(--primary-color);
+    border: solid 1px white;
+    background-clip: content-box;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a.link-button .icon .play-icon{
+    width: 0;
+    height: 0;
+    border: solid 7px white;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    margin-right: -7px;
+}
+
+a.link-button .label {
+    margin-left: 10px;
+}
+
+.navigator{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.navigator ul li {
+    margin: 60px 0;
+}
+
+.navigator ul li:first-child{
+    margin-top: 0;
+}
+
+.navigator ul li:last-child{
+    margin-bottom: 0;
+}
+
+.navigator ul li a {
+    color: white;
+    border: solid 2px white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigator::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    z-index: 0;
+}
+
+.navigator ul {
+    z-index: 1;
+}
+
+.navigator ul li a:hover,
+.navigator ul li a.active{
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.navigator .navigator__icon {
+    position: absolute;
+    top: -20px;
+}
+
+.pills ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.pills ul li{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px 15px;
+    margin: 0 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
